@@ -14,10 +14,10 @@ export default async function Home({
   params: { locale: string };
 }) {
   const data = await fetchData(
-    "https://paolodedomini.github.io/ciotolataWebApp/ciotolata"
+    "https://paolodedomini.github.io/ciotolataWebApp/api/ciotolata.json"
   );
 
   unstable_setRequestLocale(locale);
-  console.log(data, "data");
-  return <main className={styles.main}>deeostronzo</main>;
+
+  return <main className={styles.main}>{data.messages[10022].text}</main>;
 }
