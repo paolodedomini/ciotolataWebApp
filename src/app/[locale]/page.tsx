@@ -14,7 +14,7 @@ export default async function Home({
   params: { locale: string };
 }) {
   const data = await fetchData(
-    "https://paolodedomini.github.io/ciotolataWebApp/ciotolata.json"
+    "https://paolodedomini.github.io/ciotolataWebApp/ciotolata"
   );
 
   unstable_setRequestLocale(locale);
