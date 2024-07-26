@@ -97,12 +97,7 @@ export const ImagePreload = ({
                 },
               }}
             >
-              <Image
-                src="/image/florencebarbellstudiologo.png"
-                width={300}
-                height={58}
-                alt="logo"
-              />
+              <Image src="/image/logo.svg" width={300} height={58} alt="logo" />
             </motion.div>
           </motion.div>
         )}

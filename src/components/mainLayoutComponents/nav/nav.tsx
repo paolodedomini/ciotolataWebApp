@@ -34,12 +34,7 @@ function NavBar() {
         <div className={style.mainNavBar__logo}>
           <Link href="/">
             {isHome() ? (
-              <Image
-                src="/image/florencebarbellstudiologo.png"
-                width={300}
-                height={58}
-                alt="logo"
-              />
+              <Image src="/image/logo.svg" width={300} height={58} alt="logo" />
             ) : (
               <Image
                 src="/image/florencebarbellstudiologoInverted.jpg"
@@ -118,7 +113,7 @@ function NavBar() {
               </div>
               <a href="/">
                 <Image
-                  src="/image/florencebarbellstudiologo.png"
+                  src="/image/logo.svg"
                   width={220}
                   height={40}
                   alt="logo"
