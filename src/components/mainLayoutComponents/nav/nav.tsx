@@ -36,12 +36,7 @@ function NavBar() {
             {isHome() ? (
               <Image src="/image/logo.svg" width={300} height={58} alt="logo" />
             ) : (
-              <Image
-                src="/image/florencebarbellstudiologoInverted.jpg"
-                width={300}
-                height={58}
-                alt="logo"
-              />
+              <Image src="/image/logo.svg" width={300} height={58} alt="logo" />
             )}
           </Link>
         </div>
