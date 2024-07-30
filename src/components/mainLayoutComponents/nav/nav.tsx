@@ -34,54 +34,18 @@ function NavBar() {
         <div className={style.mainNavBar__logo}>
           <Link href="/">
             {isHome() ? (
-              <Image src="/image/logo.svg" width={300} height={58} alt="logo" />
+              <Image
+                src="/image/logo.svg"
+                width={437}
+                height={108}
+                alt="logo"
+              />
             ) : (
               <Image src="/image/logo.svg" width={300} height={58} alt="logo" />
             )}
           </Link>
         </div>
-        <div
-          className={`${style.mainNavBar__navBlock} ${
-            isHome() ? style.mainNavBar__home : style.mainNavBar__inner
-          }`}
-        >
-          <div className={style.mainNavBar__navBlock__topData}>
-            Via della Stazione 27, Barga -{" "}
-            <a href="tel:+390583711372">0575 1122334</a> -{" "}
-            <a href="mailto:info@vtservices.it">info@simplesite.it</a>
-          </div>
-          <hr />
-          <ul className={style.mainNavBar__navBlock__nav}>
-            {t.map(
-              (
-                item: {
-                  name?: string;
-                  url?: string;
-                  sub?: { name: string; url: string }[];
-                },
-                index
-              ) => (
-                <li
-                  className={`${
-                    pathN.includes(item.url || "") && style.activeLink
-                  } ${item.sub && style.hasSub}`}
-                  key={index}
-                >
-                  <Link href={item.url || ""}>{item.name}</Link>
-                  {item.sub && (
-                    <ul className={style.subNav}>
-                      {item.sub?.map((subItem, index) => (
-                        <li key={index}>
-                          <Link href={subItem.url || ""}>{subItem.name}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              )
-            )}
-          </ul>
-        </div>
+
         <div
           className={`${style.burger} ${
             isHome() ? style.burger__home : style.burger__inner

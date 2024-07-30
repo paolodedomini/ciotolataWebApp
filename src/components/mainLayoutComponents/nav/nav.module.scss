@@ -3,7 +3,6 @@
   padding: 0 1rem;
   z-index: 200;
   &__home {
-    background: linear-gradient(rgb(3, 17, 33) 7%, rgb(50 92 175 / 0%) 100%);
     .mainNavBar {
       padding-bottom: 5rem;
       a {
@@ -24,7 +23,7 @@
 }
 .mainNavBar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1540px;
   margin: 0 auto;
   color: white;
@@ -34,9 +33,13 @@
   padding-top: 4rem;
   padding-bottom: 2rem;
   &__logo {
+    width: 90%;
+
     img {
-      width: 200px;
-      height: 40px;
+      width: 437px;
+      height: 108px;
+      margin: 0 auto;
+      display: block;
     }
   }
   &__home {
@@ -133,13 +136,10 @@
   }
 }
 .burger {
-  display: none;
   font-size: 1.5rem;
+
   &__inner {
     color: $navyBlue;
-  }
-  @media #{$landscape} {
-    display: block;
   }
 }
 .navMobile {

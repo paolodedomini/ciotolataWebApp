@@ -1,6 +1,7 @@
 body {
   margin: 0;
   @include title();
+  background-color: #4b4b4b;
 }
 * {
   box-sizing: border-box;

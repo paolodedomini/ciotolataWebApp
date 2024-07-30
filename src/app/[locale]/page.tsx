@@ -2,6 +2,7 @@ import styles from "./page.module.scss";
 import { unstable_setRequestLocale } from "next-intl/server";
 import fetchData from "@/utils/fetchData";
 import { filterDataByAuthors } from "@/utils/filterData";
+import MainUi from "@/components/ui/player/playerUi";
 /**
  * PAGINA
  * Utilizzare le pagine per fetchare i dati e passarli ai componenti
@@ -26,6 +27,7 @@ export default async function Home({
 
   return (
     <main className={styles.main}>
+      <MainUi />
       {prevRandomQuote} <br />
       {randomQuote}
       <br />
